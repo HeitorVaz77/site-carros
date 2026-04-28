@@ -1,0 +1,99 @@
+strong{
+    color: red;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav {
+    background-color: rgb(0, 0, 0) #222;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 15px;
+}
+nav ul li a {
+color: rgb(198, 5, 5);
+text-decoration: none;
+font-size: 18px;
+}
+nav ul li a:hover {
+color: darkgray;
+}
+#Home {
+    background: url('./Supercar\ trio\ na\ pista\ de\ corrida.png') center/cover no-repeat;
+    color:rgb(0, 0, 0) (208, 0, 0);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Home h1{
+    font-size: 40px;
+    color: white;
+}
+#Home h2{ 
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+section{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+#Car { 
+    image-resolution: unset;
+    background: url(ChatGPT\ Image\ 5\ de\ mar.\ de\ 2026\,\ 15_24_51.png);
+}
+form label{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input, form textarea {
+padding: 10px;
+border: 1px white;
+border-radius: 5px;
+}
+form button {
+    background: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+form button:hover{
+    background: red;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.tabela-container {
+  width: 100%;
+  overflow-x: auto;
+}
