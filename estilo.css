@@ -97,3 +97,7 @@ footer{
   width: 100%;
   overflow-x: auto;
 }
+
+.video-container {
+    text-align: center;
+}
