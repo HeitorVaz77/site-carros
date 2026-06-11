@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Turbo Elite</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#Home">Turbo Elite</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+
+      <div class="navbar-nav ms-auto align-items-center">
+
+        <a class="nav-link active" href="#Home">Home</a>
+        <a class="nav-link" href="#Car">Carros</a>
+        <a class="nav-link" href="#Contato">Contato</a>
+
+        <button id="modoBtn" class="btn btn-outline-light ms-3">
+          🌙 Modo Escuro
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+  <section id="Home">
+    <h1>Bem-vindo à Turbo Elite</h1>
+
+    <h2>
+      Se a paixão é <strong>velocidade, tecnologia e exclusividade</strong>,
+      <br>a Turbo Elite é o ponto de partida 🏎️💨
+    </h2>
+
+    <p>
+      A Turbo Elite nasce para ser o destino definitivo dos apaixonados por carros esportivos.
+      Mais do que um simples site, a plataforma reúne informações completas sobre as máquinas
+      mais desejadas do mundo automotivo.
+    </p>
+
+    
+  </section>
+
+  <section id="Car" class="container text-center">
+    <h2>Carros em destaque</h2>
+
+   <div class="carrossel">
+  <img id="imagemCarrossel" src="ChatGPT Image 5 de mar. de 2026, 15_33_50.png" alt="Carro esportivo">
+  <h3 id="nomeCarro">Ferrari F8 Tributo</h3>
+</div>
+
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <h3>Ferrari F8 Tributo</h3>
+        <img src="ChatGPT Image 5 de mar. de 2026, 15_33_50.png" class="img-fluid" alt="Ferrari F8 Tributo">
+      </div>
+
+      <div class="col-md-4">
+        <h3>Lamborghini Huracán EVO</h3>
+        <img src="ChatGPT Image 5 de mar. de 2026, 15_24_51.png" class="img-fluid" alt="Lamborghini Huracán EVO">
+      </div>
+
+      <div class="col-md-4">
+        <h3>Porsche 911 GT3</h3>
+        <img src="ChatGPT Image 5 de mar. de 2026, 15_28_42.png" class="img-fluid" alt="Porsche 911 GT3">
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Comparativo dos carros</h2>
+
+    <div class="tabela-container">
+      <table>
+        <tr>
+          <th>Carro</th>
+          <th>Motor</th>
+          <th>Potência</th>
+          <th>0-100 Km/h</th>
+          <th>Velocidade máxima</th>
+          <th>Tração</th>
+          <th>Tipo de motor</th>
+        </tr>
+
+        <tr>
+          <td><strong>Ferrari F8 Tributo</strong></td>
+          <td>3.9L V8 Biturbo</td>
+          <td>720 cv</td>
+          <td>2,9s</td>
+          <td>340 Km/h</td>
+          <td>Traseira</td>
+          <td>Motor Central</td>
+        </tr>
+
+        <tr>
+          <td><strong>Lamborghini Huracán EVO</strong></td>
+          <td>5.2L V10 Aspirado</td>
+          <td>640 cv</td>
+          <td>2,9s</td>
+          <td>325 Km/h</td>
+          <td>Integral</td>
+          <td>Motor Central</td>
+        </tr>
+
+        <tr>
+          <td><strong>Porsche 911 GT3</strong></td>
+          <td>4.0L Flat-6 Aspirado</td>
+          <td>510 cv</td>
+          <td>3,4s</td>
+          <td>318 Km/h</td>
+          <td>Traseira</td>
+          <td>Motor Traseiro</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="text-center">
+    <h2>Vídeo</h2>
+
+    <video controls width="300" src="Lamborghini_VS_Porsche_.mp4">
+      <track src="legenda.vtt" kind="subtitles" srclang="pt" label="Português" default>
+      Seu navegador não suporta vídeo.
+    </video>
+  </section>
+
+  <section id="Contato">
+    <h2>Entre em contato</h2>
+
+    <form id="formContato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensagemSucesso"></p>
+  </section>
+
+  <footer>
+    <h5>Siga-nos nas redes sociais</h5>
+
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ul>
+
+    <p>&copy; 2026 Turbo Elite - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+
+
+</body>
+</html>
