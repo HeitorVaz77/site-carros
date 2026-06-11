@@ -1,104 +1,233 @@
-strong{
-    color: red;
+strong {
+  color: red;
 }
 
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+  background-color: white;
+  color: black;
 }
-nav {
-    background-color: rgb(0, 0, 0) #222;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-nav ul li{
-    margin: 15px;
-}
-nav ul li a {
-color: rgb(198, 5, 5);
-text-decoration: none;
-font-size: 18px;
-}
-nav ul li a:hover {
-color: darkgray;
-}
+
 #Home {
-    background: url('./Supercar\ trio\ na\ pista\ de\ corrida.png') center/cover no-repeat;
-    color:rgb(0, 0, 0) (208, 0, 0);
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#Home h1{
-    font-size: 40px;
-    color: white;
-}
-#Home h2{ 
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-}
-section{
-    padding: 80px 20px;
-    text-align: center;
+  background: url('./Supercar trio na pista de corrida.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  padding: 100px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+
+#Home h1 {
+  font-size: 40px;
+  color: white;
 }
-#Car { 
-    image-resolution: unset;
-    background: url(ChatGPT\ Image\ 5\ de\ mar.\ de\ 2026\,\ 15_24_51.png);
+
+#Home h2 {
+  font-size: 20px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-form label{
-    text-align: left;
-    margin-top: 10px;
-    font-weight: bold;
+
+#Home p {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 800px;
+  font-weight: bold;
 }
-form input, form textarea {
-padding: px;
-border: 1px white;
-border-radius: 5px;
+
+section {
+  padding: 80px 20px;
+  text-align: center;
 }
-form button {
-    background: black;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
+
+#Car {
+  background-color: #f5f5f5;
 }
-form button:hover{
-    background: red;
+
+#Car img {
+  border-radius: 10px;
+  margin-top: 10px;
 }
-footer{
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
+
+.carrossel {
+  max-width: 600px;
+  margin: 30px auto;
 }
+
+.carrossel img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carrossel h3 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
 .tabela-container {
   width: 100%;
   overflow-x: auto;
 }
 
-.video-container {
-    text-align: center;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
 }
 
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form label {
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form button {
+  background: black;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: red;
+}
+
+#mensagemSucesso {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+.modo-escuro {
+  background-color: #121212;
+  color: white;
+}
+
+.modo-escuro #Car,
+.modo-escuro section {
+  background-color: #121212;
+  color: white;
+}
+
+.modo-escuro table {
+  color: white;
+}
+
+.modo-escuro th,
+.modo-escuro td {
+  border: 1px solid white;
+}
+
+.modo-escuro #Home p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.modo-escuro {
+  background-color: #121212;
+  color: white;
+}
+
+.modo-escuro section {
+  background-color: #121212;
+  color: white;
+}
+/* MODO ESCURO */
+
+.modo-escuro {
+  background-color: #121212;
+  color: white;
+}
+
+.modo-escuro section {
+  background-color: #121212;
+  color: white;
+}
+
+.modo-escuro #Car {
+  background-color: #1a1a1a;
+}
+
+.modo-escuro .navbar {
+  background-color: #000 !important;
+}
+
+.modo-escuro footer {
+  background-color: #000;
+}
+
+.modo-escuro table {
+  color: white;
+}
+
+.modo-escuro th,
+.modo-escuro td {
+  border: 1px solid white;
+}
+
+.modo-escuro #Home p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.modo-escuro a {
+  color: white;
+}
