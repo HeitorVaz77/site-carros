@@ -6,56 +6,15 @@
 
   <title>Turbo Elite</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="estilo.css">
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .tabela-container {
-      width: 100%;
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 700px;
-    }
-
-    th, td {
-      border: 2px solid #000;
-      padding: 10px;
-      text-align: center;
-    }
-
-    th {
-      font-weight: bold;
-    }
-
-    @media (max-width: 600px) {
-      table {
-        font-size: 14px;
-      }
-
-      th, td {
-        padding: 8px;
-      }
-    }
-
-    .video-container {
-      text-align: center;
-      margin: 20px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
+
     <a class="navbar-brand" href="#Home">Turbo Elite</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -63,144 +22,155 @@
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
-      <div class="navbar-nav ms-auto">
+
+      <div class="navbar-nav ms-auto align-items-center">
+
         <a class="nav-link active" href="#Home">Home</a>
         <a class="nav-link" href="#Car">Carros</a>
         <a class="nav-link" href="#Contato">Contato</a>
+
+        <button id="modoBtn" class="btn btn-outline-light ms-3">
+          🌙 Modo Escuro
+        </button>
+
       </div>
+
     </div>
   </div>
 </nav>
+  <section id="Home">
+    <h1>Bem-vindo à Turbo Elite</h1>
 
-<!-- HOME -->
-<section id="Home" class="p-5 text-center">
-  <h1>Bem-vindo à Turbo Elite</h1>
+    <h2>
+      Se a paixão é <strong>velocidade, tecnologia e exclusividade</strong>,
+      <br>a Turbo Elite é o ponto de partida 🏎️💨
+    </h2>
 
-  <h2>
-    Se a paixão é <strong>velocidade, tecnologia e exclusividade</strong>,
-    <br> a Turbo Elite é o ponto de partida 🏎️💨
-  </h2>
+    <p>
+      A Turbo Elite nasce para ser o destino definitivo dos apaixonados por carros esportivos.
+      Mais do que um simples site, a plataforma reúne informações completas sobre as máquinas
+      mais desejadas do mundo automotivo.
+    </p>
 
-  <p>
-    A Turbo Elite reúne informações completas sobre os carros mais desejados do mundo.
-  </p>
-</section>
+    
+  </section>
 
-<!-- CARROS -->
-<section id="Car" class="container text-center">
-  <div class="row">
+  <section id="Car" class="container text-center">
+    <h2>Carros em destaque</h2>
 
-    <div class="col-md-4">
-      <h3>Ferrari F8 Tributo</h3>
-      <img src="ChatGPT Image 5 de mar. de 2026, 15_33_50.png" class="img-fluid" alt="Ferrari F8">
+   <div class="carrossel">
+  <img id="imagemCarrossel" src="ChatGPT Image 5 de mar. de 2026, 15_33_50.png" alt="Carro esportivo">
+  <h3 id="nomeCarro">Ferrari F8 Tributo</h3>
+</div>
+
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <h3>Ferrari F8 Tributo</h3>
+        <img src="ChatGPT Image 5 de mar. de 2026, 15_33_50.png" class="img-fluid" alt="Ferrari F8 Tributo">
+      </div>
+
+      <div class="col-md-4">
+        <h3>Lamborghini Huracán EVO</h3>
+        <img src="ChatGPT Image 5 de mar. de 2026, 15_24_51.png" class="img-fluid" alt="Lamborghini Huracán EVO">
+      </div>
+
+      <div class="col-md-4">
+        <h3>Porsche 911 GT3</h3>
+        <img src="ChatGPT Image 5 de mar. de 2026, 15_28_42.png" class="img-fluid" alt="Porsche 911 GT3">
+      </div>
     </div>
+  </section>
 
-    <div class="col-md-4">
-      <h3>Lamborghini Huracán EVO</h3>
-      <img src="ChatGPT Image 5 de mar. de 2026, 15_24_51.png" class="img-fluid" alt="Lamborghini">
+  <section class="container">
+    <h2>Comparativo dos carros</h2>
+
+    <div class="tabela-container">
+      <table>
+        <tr>
+          <th>Carro</th>
+          <th>Motor</th>
+          <th>Potência</th>
+          <th>0-100 Km/h</th>
+          <th>Velocidade máxima</th>
+          <th>Tração</th>
+          <th>Tipo de motor</th>
+        </tr>
+
+        <tr>
+          <td><strong>Ferrari F8 Tributo</strong></td>
+          <td>3.9L V8 Biturbo</td>
+          <td>720 cv</td>
+          <td>2,9s</td>
+          <td>340 Km/h</td>
+          <td>Traseira</td>
+          <td>Motor Central</td>
+        </tr>
+
+        <tr>
+          <td><strong>Lamborghini Huracán EVO</strong></td>
+          <td>5.2L V10 Aspirado</td>
+          <td>640 cv</td>
+          <td>2,9s</td>
+          <td>325 Km/h</td>
+          <td>Integral</td>
+          <td>Motor Central</td>
+        </tr>
+
+        <tr>
+          <td><strong>Porsche 911 GT3</strong></td>
+          <td>4.0L Flat-6 Aspirado</td>
+          <td>510 cv</td>
+          <td>3,4s</td>
+          <td>318 Km/h</td>
+          <td>Traseira</td>
+          <td>Motor Traseiro</td>
+        </tr>
+      </table>
     </div>
+  </section>
 
-    <div class="col-md-4">
-      <h3>Porsche 911 GT3</h3>
-      <img src="ChatGPT Image 5 de mar. de 2026, 15_28_42.png" class="img-fluid" alt="Porsche">
-    </div>
+  <section class="text-center">
+    <h2>Vídeo</h2>
 
-  </div>
-</section>
+    <video controls width="300" src="Lamborghini_VS_Porsche_.mp4">
+      <track src="legenda.vtt" kind="subtitles" srclang="pt" label="Português" default>
+      Seu navegador não suporta vídeo.
+    </video>
+  </section>
 
-<!-- TABELA -->
-<section class="tabela-container">
-  <table>
-    <tr>
-      <th>Carro</th>
-      <th>Motor</th>
-      <th>Potência</th>
-      <th>0-100 Km/h</th>
-      <th>Velocidade máxima</th>
-      <th>Tração</th>
-      <th>Tipo de motor</th>
-    </tr>
+  <section id="Contato">
+    <h2>Entre em contato</h2>
 
-    <tr>
-      <td><strong>Ferrari F8 Tributo</strong></td>
-      <td>3L V8 Biturbo</td>
-      <td>720 cv</td>
-      <td>2,9s</td>
-      <td>340 Km/h</td>
-      <td>RWD</td>
-      <td>Central</td>
-    </tr>
+    <form id="formContato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
 
-    <tr>
-      <td><strong>Lamborghini Huracán EVO</strong></td>
-      <td>5.2L V10</td>
-      <td>640 cv</td>
-      <td>2,9s</td>
-      <td>325 Km/h</td>
-      <td>AWD</td>
-      <td>Central</td>
-    </tr>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
 
-    <tr>
-      <td><strong>Porsche 911 GT3</strong></td>
-      <td>4.0L Flat-6</td>
-      <td>510 cv</td>
-      <td>3,4s</td>
-      <td>318 Km/h</td>
-      <td>RWD</td>
-      <td>Traseiro</td>
-    </tr>
-  </table>
-</section>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
 
-<!-- VIDEO -->
-<section class="video-container">
-  <video controls width="300">
-    <source src="Lamborghini_VS_Porsche_.mp4" type="video/mp4">
-    <track src="legenda.vtt" kind="subtitles" srclang="pt" label="Português" default>
-    Seu navegador não suporta vídeo.
-  </video>
-</section>
+      <button type="submit">Enviar</button>
+    </form>
 
-<!-- CONTATO -->
-<section id="Contato" class="p-4">
-  <h2>Entre em contato</h2>
+    <p id="mensagemSucesso"></p>
+  </section>
 
-<form class="mx-auto" style="max-width: 500px;">
-  <div class="mb-3">
-    <label class="form-label">Nome</label>
-    <input type="text" class="form-control" required>
-  </div>
+  <footer>
+    <h5>Siga-nos nas redes sociais</h5>
 
-  <div class="mb-3">
-    <label class="form-label">E-mail</label>
-    <input type="email" class="form-control" required>
-  </div>
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ul>
 
-  <div class="mb-3">
-    <label class="form-label">Mensagem</label>
-    <textarea class="form-control" rows="4" required></textarea>
-  </div>
+    <p>&copy; 2026 Turbo Elite - Todos os direitos reservados.</p>
+  </footer>
 
-  <button class="btn btn-dark w-100">Enviar</button>
-</form>
-</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
 
-<!-- FOOTER -->
-<footer class="text-center p-3 bg-dark text-light">
-  <h5>Siga-nos</h5>
-  <a href="#">Instagram</a> |
-  <a href="#">Facebook</a>
-  <p>&copy; 2026 Turbo Elite</p>
-</footer>
-
-<!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
-
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
